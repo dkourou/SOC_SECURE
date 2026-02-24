@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Obsidian
+.obsidian/
+
+# Encrypted folders
+.enc/
+
+# Mount points
+mount/
+
+# Backup
+backup/
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Sensitive
+*.key
+*.pem
+*.env
