@@ -1,6 +1,6 @@
 # 🛡️ SOC_SECURE – Cybersecurity Home Lab (SIEM / Detection Engineering / Incident Response)
 
-## 🎯 Objectif
+## Objectif
 
 Ce projet est un laboratoire SOC personnel conçu pour simuler des environnements réels de cybersécurité, afin de développer des compétences opérationnelles en :
 
@@ -12,7 +12,7 @@ Ce projet est un laboratoire SOC personnel conçu pour simuler des environnement
 
 ---
 
-## 🧠 Ce que je sais faire (compétences démontrées)
+## Ce que je sais faire (compétences démontrées)
 
 ✔ Déployer et configurer un SIEM (Wazuh)  
 ✔ Intégrer et analyser des logs (pfSense, Linux, endpoints)  
@@ -23,7 +23,7 @@ Ce projet est un laboratoire SOC personnel conçu pour simuler des environnement
 
 ---
 
-## 🏗️ Architecture du Lab
+## Architecture du Lab
 
 - Hyperviseur : VirtualBox
 - Firewall : pfSense
@@ -36,7 +36,15 @@ Ce projet est un laboratoire SOC personnel conçu pour simuler des environnement
 
 ---
 
-## 🔍 Cas de détection (Detection Engineering)
+## 🔄 SIEM Pipeline
+
+![SIEM Pipeline](_assets/siem-pipeline.png)
+
+## 🚨 Attack → Detection → Alert
+
+![Attack Flow](_assets/attack-flow.png)
+
+## Cas de détection (Detection Engineering)
 
 Exemples de use cases implémentés :
 
@@ -48,7 +56,7 @@ Exemples de use cases implémentés :
 
 ---
 
-## 🚨 Incident Response (scénarios réels)
+## Incident Response (scénarios réels)
 
 Incidents documentés avec analyse :
 
@@ -60,7 +68,7 @@ Incidents documentés avec analyse :
 
 ---
 
-## ⚙️ Opérations SOC (runbooks)
+## Opérations SOC (runbooks)
 
 Procédures opérationnelles :
 
@@ -73,7 +81,7 @@ Procédures opérationnelles :
 
 ---
 
-## 🧪 Lab Notes & Troubleshooting
+## Lab Notes & Troubleshooting
 
 Retour d’expérience réel :
 
@@ -85,7 +93,7 @@ Retour d’expérience réel :
 
 ---
 
-## 🔧 Automatisation
+## Automatisation
 
 Scripts pour gérer l’environnement SOC :
 
@@ -97,7 +105,7 @@ Scripts pour gérer l’environnement SOC :
 
 ---
 
-## 📌 Approche
+## Approche
 
 Ce lab est construit avec une logique professionnelle :
 
@@ -108,7 +116,7 @@ Ce lab est construit avec une logique professionnelle :
 
 ---
 
-## 🎯 Objectif professionnel
+## Objectif professionnel
 
 Actuellement en recherche d’une alternance en cybersécurité (SOC / Blue Team / systèmes & réseaux).
 
@@ -119,8 +127,11 @@ Ce projet sert de démonstration concrète de mes compétences techniques et de 
 - documenter et structurer un environnement technique
 
 ---
+## Architecture  
+  
+![SOC Network](_assets/network.png)
 
-## 📎 Auteur
+## Auteur
 
 Jules RUZINDANA  
 📍 Nantes / Rennes  
