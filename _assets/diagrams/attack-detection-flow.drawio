@@ -1,0 +1,41 @@
+<mxfile>
+  <diagram name="Attack Flow">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0"/><mxCell id="1" parent="0"/>
+
+        <mxCell id="attacker" value="Attacker (Kali)" style="rounded=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="160" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="attack" value="Attack&#xa;SSH Brute Force&#xa;Scan (nmap)" style="rounded=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="240" y="120" width="180" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="logs" value="Logs Generated&#xa;(auth.log / firewall)" style="rounded=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="460" y="120" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="wazuh" value="Wazuh Detection&#xa;(rules + correlation)" style="rounded=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="700" y="120" width="220" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="alert" value="Alert Generated&#xa;(rule.level ≥5)" style="rounded=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="960" y="120" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="analyst" value="SOC Analyst&#xa;(investigation)" style="rounded=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="120" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell edge="1" parent="1" source="attacker" target="attack"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="attack" target="logs"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="logs" target="wazuh"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="wazuh" target="alert"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell edge="1" parent="1" source="alert" target="analyst"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
